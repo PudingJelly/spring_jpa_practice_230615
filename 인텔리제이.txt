@@ -1,0 +1,79 @@
+설치 후 기본 자바프로젝트 생성 (new project)
+
+프로젝트 이름, 저장위치, 깃레파지토리 선택
+
+사용 할 언어 선택
+빌드시스템 : 기본 인텔리제이 (인텔리제이가 알아서 인식함)
+
+쉬프트 2번 연타 후 plugins 검색
+marketplace korean 검색 후 설치
+
+material 검색하면 테마 두개 설치
+key promoter X 설치(단축키 편하게)
+translation 설치 (번역기)
+
+alt+1 => 파일선택으로 이동
+alt+insert => 파일 생성 단축키
+
+alt+엔터 자동완성
+
+클래스안에서 alt+insert => 생성자, getter, setter 등 자동완성
+
+
+인텔리제이 무료버전에서 스프링부트를 사용하기 위한 플러그인
+https://start.spring.io/ 
+
+project - Gradle-groovy
+2.7.12버전 선택
+밑에 부분은 알아서....
+자바 11선택
+
+dependencies 추가
+
+lombok, spring web, spring data jpa, mysql driver
+
+Generate로 zip 파일 다운 후 압축 풀기
+
+build.gradle = pom.xml 과 같은 역할
+
+프로젝트 새로 만들면 알아서 업데이트 진행
+
+설정-어노테이션 검색 - 어노테이션 처리 활성화
+
+
+alt+F12 => 터미널 단축키(cmd)
+
+src/main/resources/application.properties => application.yml로 파일명 변경
+
+yml로 파일을 먼저 변경 해주어야 자동 들여쓰기가 적용됨
+
+
+패키지 생성 - com.spring.jpa.chap01_basic.entity
+클래스 생성 - Product
+@Entity
+    
+JPA가 실행될 때 테이블을 클래스에 맞게 생성해주는 어노테이션
+@Id
+    
+Entity 어노테이션에 의해 테이블을 생성할 때 primary key로 설정할 값에 사용하는 어노테이션
+@Column(name = "컬럼명")
+    
+클래스에서 사용하고 싶은 변수명과 컬럼명이 다를 때 원하는 컬럼명으로 설정해주는 어노테이션
+(name = "컬럼명", nullable = false, length = 30) 형식으로 원하는 옵션도 추가 가능
+@Table(name = "테이블명")
+    
+클래스에서 사용하고 싶은 클래스명과 테이블명이 다를 때 원하는 테이블명으로 설정해주는 어노테이션
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+기본 키의 생성 전략을 지정. 
+GenerationType. 이후에 원하는 값으로 설정
+설정하지 않으면 Auto가 기본값. - 특정 상황에서 문제가 될 수 있으니 비추천.
+
+
+ctlr + shift + T => 자동으로 테스트 클래스 생성 단축키
+
+ctrl + shift + F10 => 테스트 클래스 실행 단축키
+
+
+P6Spy Spring Boot Starter
+build.gradle 에 넣기

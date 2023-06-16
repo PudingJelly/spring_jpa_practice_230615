@@ -21,4 +21,9 @@ public class Employee {
     @Column(name = "emp_name", nullable = false)
     private String name;
 
+    @ManyToOne
+    @JoinColumn(name = "dept_id") // 조회 시 조인에 사용될 컬럼명을 지목(foreign key)
+    private Department department;
+
 }
+

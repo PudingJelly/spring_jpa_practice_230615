@@ -50,21 +50,21 @@ yml로 파일을 먼저 변경 해주어야 자동 들여쓰기가 적용됨
 
 패키지 생성 - com.spring.jpa.chap01_basic.entity
 클래스 생성 - Product
-@Entity
-    
+
+@Entity    
 JPA가 실행될 때 테이블을 클래스에 맞게 생성해주는 어노테이션
-@Id
-    
+
+@Id    
 Entity 어노테이션에 의해 테이블을 생성할 때 primary key로 설정할 값에 사용하는 어노테이션
-@Column(name = "컬럼명")
-    
+
+@Column(name = "컬럼명")    
 클래스에서 사용하고 싶은 변수명과 컬럼명이 다를 때 원하는 컬럼명으로 설정해주는 어노테이션
 (name = "컬럼명", nullable = false, length = 30) 형식으로 원하는 옵션도 추가 가능
-@Table(name = "테이블명")
-    
+
+@Table(name = "테이블명")    
 클래스에서 사용하고 싶은 클래스명과 테이블명이 다를 때 원하는 테이블명으로 설정해주는 어노테이션
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-    
+
+@GeneratedValue(strategy = GenerationType.IDENTITY)    
 기본 키의 생성 전략을 지정. 
 GenerationType. 이후에 원하는 값으로 설정
 설정하지 않으면 Auto가 기본값. - 특정 상황에서 문제가 될 수 있으니 비추천.
@@ -77,3 +77,5 @@ ctrl + shift + F10 => 테스트 클래스 실행 단축키
 
 P6Spy Spring Boot Starter
 build.gradle 에 넣기
+
+상단에 코끼리 누르거나 ctrl + shift + O 로 임포트

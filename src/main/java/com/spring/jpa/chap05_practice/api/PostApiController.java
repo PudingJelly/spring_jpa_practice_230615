@@ -31,7 +31,8 @@ public class PostApiController {
         게시물 등록: /posts          - POST
         게시물 수정: /posts          - PATCH
         게시물 삭제: /posts/{id}     - DELETE
-
+    */
+    /*
         A = {
             1: a,
             2: b
@@ -45,9 +46,14 @@ public class PostApiController {
 
         * PATCH 수정 방식
         A.1 = c;
-
     */
 
+    /*
+    @Autowired
+    private PostService postService;
+    */
+    // final 선언 후 클래스에 @RequiredArgsConstructor 선언
+    // 하나하나 @Autowired를 걸어 줄 필요 없음
     private final PostService postService;
 
     @GetMapping

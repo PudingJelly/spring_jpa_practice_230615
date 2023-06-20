@@ -79,3 +79,12 @@ P6Spy Spring Boot Starter
 build.gradle 에 넣기
 
 상단에 코끼리 누르거나 ctrl + shift + O 로 임포트
+
+
+rest통신을 위한 프로그램 설치
+postman
+
+밑에 계정 나중에 생성 클릭 후 프로그램 실행
+
+History 생성
+New -> HTTP

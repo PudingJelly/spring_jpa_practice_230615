@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 
 @Service
 @Slf4j
-@RequiredArgsConstructor
+@RequiredArgsConstructor // final 선언 시 필수로 지정해주어야 하는 어노테이션
 @Transactional // JPA 레파지토리는 트랜잭션 단위로 동작하기 때문에 꼭 작성!
 public class PostService {
 

@@ -20,6 +20,7 @@ alt+엔터 자동완성
 클래스안에서 alt+insert => 생성자, getter, setter 등 자동완성
 
 
+
 인텔리제이 무료버전에서 스프링부트를 사용하기 위한 플러그인
 https://start.spring.io/ 
 
@@ -48,6 +49,8 @@ alt+F12 => 터미널 단축키(cmd)
 src/main/resources/application.properties => application.yml로 파일명 변경
 
 yml로 파일을 먼저 변경 해주어야 자동 들여쓰기가 적용됨
+
+
 
 
 패키지 생성 - com.spring.jpa.chap01_basic.entity
@@ -90,3 +93,7 @@ postman
 
 History 생성
 New -> HTTP
+
+
+api 명세서
+swagger ui 라이브러리 사용

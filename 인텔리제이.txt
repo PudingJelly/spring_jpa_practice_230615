@@ -31,7 +31,7 @@ project - Gradle-groovy
 
 dependencies 추가
 
-lombok, spring web, spring data jpa, mysql driver
+lombok, spring web, spring data jpa, mysql driver, spring boot devtools
 
 Generate로 zip 파일 다운 후 압축 풀기
 

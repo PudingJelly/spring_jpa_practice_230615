@@ -22,7 +22,7 @@ public class HashTag {
 
     private String tagName; // 해쉬태그 이름
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL/*조인문법이 적용 되었을 때 작성*/)
     @JoinColumn(name = "post_no") // 실제 컬럼명으로 작성
     private Post post;
 

@@ -22,7 +22,7 @@ public class PostCreateDTO {
 
 //    @NotNull -> null을 허용하지 않음. "", " " 은 허용
 //    @NotEmpty -> null, ""을 허용하지 않음. " " 은 허용
-    @NotBlank // null, "", " " 전부 허용하지 않음.
+    @NotBlank // null, "", " " 전부 허용하지 않음. String에만 적용됨.
     @Size(min = 1, max = 20)
     private String title;
 

@@ -97,3 +97,11 @@ New -> HTTP
 
 api 명세서
 swagger ui 라이브러리 사용
+
+회원가입 관련된 라이브러리
+build.gradle 스프링 시큐리티 모듈, json web token 라이브러리
+
+세션은 서버끼리의 공유가 어렵기 때문에 boot에서는 토큰방식을 사용함
+
+
+ctrl + alt + v => 변수 설정하여 간단하게 적용

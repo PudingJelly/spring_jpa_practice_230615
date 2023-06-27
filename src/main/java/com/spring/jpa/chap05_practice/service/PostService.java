@@ -71,6 +71,7 @@ public class PostService {
 
     public PostDetailResponseDTO insert(final PostCreateDTO dto)
             throws RuntimeException {
+    // service단에서 setter를 불러서 값을 변경 할 수 없도록 final 선언
 
         // 게시물 저장
         Post saved = postRepository.save(dto.toEntity());
